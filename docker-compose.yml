@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  # 后端服务
+  backend:
+    build: ./backend
+    ports:
+      - "8080:8080"
+    environment:
+      - DB_HOST=db
+      - DB_USER=root
+      - DB_PASSWORD=root
+    depends_on:
+      - db
+
+  # 前端服务
+  frontend:
+    build: ./frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+
+  # 数据库服务 (MySQL 8.0)
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: saas_dashboard
+    ports:
+      - "3306:3306"
