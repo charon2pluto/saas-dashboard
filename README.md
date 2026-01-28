@@ -5,7 +5,7 @@
 ![Docker](https://img.shields.io/badge/Docker-Enabled-2496ED?style=flat&logo=docker)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-> **🎯 项目背景**: 本项目是我为冲击 **金山办公（WPS）2027届菁英工程师培训计划** 而构建的实战演练项目。旨在通过全栈开发，完成从 Java 到 **云原生 Go 开发** 的技术栈转型，并实践工业级的代码规范。
+> **🎯 项目背景**: 本项目的目标是实现一套对标金山办公（WPS）技术标准的云原生架构。它是从 Java 生态向 Go 微服务转型的实战演练。
 
 ## 📖 项目简介 (Introduction)
 
@@ -36,3 +36,4 @@ saas-dashboard/
 │   ├── src/      # 源代码
 │   └── package.json
 └── README.md     # 项目文档
+
